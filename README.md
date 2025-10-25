@@ -37,7 +37,6 @@
 
 ---
   ```markdown
-  ```plaintext
 ## 📂 Структура проекта
 project/
 │
