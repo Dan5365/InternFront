@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мой путь в IT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+ <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+ <div class="progress-wrap"><div class="progress" id="progress"></div></div>
+  <!-- === Фоновое видео === -->
+  <div class="hero__bg">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="assets/Coding2.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <!-- === Canvas с частицами === -->
+  <canvas id="bgCanvas"></canvas>
+
+ <header class="site-header container-fluid px-4 py-3 d-flex justify-content-between align-items-center">
+  <div class="logo" data-text="IT JOURNEY">IT JOURNEY 🚀</div>
+
+  <!-- Бургер-кнопка -->
+  <div class="burger-menu d-lg-none" id="burger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- Навигация -->
+  <nav class="nav-menu" id="navMenu">
+    <ul class="nav">
+      <li class="nav-item"><a href="#s1" class="nav-link active">Начало</a></li>
+      <li class="nav-item"><a href="#s2" class="nav-link">Обучение</a></li>
+      <li class="nav-item"><a href="#s3" class="nav-link">Проекты</a></li>
+      <li class="nav-item"><a href="#s4" class="nav-link">Итерации</a></li>
+      <li class="nav-item"><a href="#s5" class="nav-link">Рост</a></li>
+      <li class="nav-item"><a href="#s6" class="nav-link">Будущее</a></li>
+    </ul>
+  </nav>
+
+  <!-- <a href="#profile" class="btn-prof">Профи</a> -->
+</header>
+
+
+  <main>
+    <!-- HERO -->
+ <section id="s1" class="hero">
+  <div class="hero__content">
+    <h1 class="glitch-text">IT JOURNEY </h1>
+    <p class="subtitle">От первого тега — до создания цифровых миров</p>
+    <div class="hero__buttons">
+      <a href="#s2" class="btn btn--red">Погнали</a>
+      <a href="#about" class="btn btn--outline">Что это за путь?</a>
+    </div>
+  </div>
+</section>
+
+
+
+   <!-- LEARNING -->
+<section id="s2" class="story-section learning text-center">
+  <div class="container py-5">
+    <h2 class="section-title">Путь обучения</h2>
+    <p class="section-subtitle">
+      Мой путь в IT начался с простого — интереса.  
+      <br>Из любопытства я открыл HTML и CSS, потом шаг за шагом пошёл глубже:  
+      <strong>JavaScript</strong>, <strong>Python</strong> и фреймворки.
+    </p>
+
+    <div class="skills-line">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python</span>
+      <span class="skill">React</span>
+      <span class="skill">FastAPI</span>
+      <span class="skill">Git</span>
+      <span class="skill">Docker</span>
+    </div>
+
+    <p class="section-subtitle mt-4">
+      Каждый язык стал инструментом, а не целью.  
+      Сейчас я могу не просто «кодить», а <strong>Cоздавать Cистемы</strong>
+    </p>
+  </div>
+</section>
+
+
+<!-- PROJECTS / TIMELINE -->
+<section id="s3" class="story-section timeline">
+  <div class="container py-5">
+    <h2 class="section-title text-center">Проекты и опыт</h2>
+    <p class="section-subtitle text-center mb-5">
+      Настоящий рост приходит, когда знания превращаются в результат.
+    </p>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+
+      <!-- Портфолио -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Портфолио-сайт</h3>
+          <p>Мой первый шаг в веб-разработке.  
+          Создал адаптивный сайт с анимациями и интерактивом,  
+          чтобы показать себя и навыки дизайна.</p>
+        </div>
+      </div>
+
+      <!-- Чемпионат -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>Чемпионат по веб-разработке</h3>
+          <p>Мой первый серьёзный вызов, где я получил реальный опыт и победил.  
+          Именно там я начал практиковаться с базовым стеком и впервые поработал с PHP,  
+          что дало мощный толчок к развитию.</p>
+        </div>
+      </div>
+
+      <!-- Игра Gallow Game -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Игра “Gallow Game”</h3>
+          <p>Проект, в котором я полюбил JavaScript.  
+          Создавал механику, интерфейс и атмосферу, вложив свои идеи и эмоции в игру.</p>
+        </div>
+      </div>
+
+      <!-- FastAPI проекты -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>Путь к FastAPI</h3>
+          <p>После игр я перешёл к изучению бэкенда.  
+          Создал проекты <strong>ShioriApp</strong>, <strong>MyAIVtuber</strong> и другие,  
+          и именно тогда я окончательно выбрал сторону серверной разработки.</p>
+        </div>
+      </div>
+
+      <!-- Hackathon Project -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>Hackathon Project</h3>
+          <p>Под-финал стал настоящим испытанием и опытом.  
+          Я научился работать в команде, распределять роли и успевать к дедлайнам.  
+          Это также открыло возможность трудоустройства.</p>
+        </div>
+      </div>
+
+      <!-- Финал -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>Финал: путь вперёд</h3>
+          <p>Сейчас я активно ищу стажировки, дуальное обучение и работу.  
+          Открывается множество возможностей, глаза горят, и я пробую всё,  
+          чтобы превратить знания в реальные проекты и карьеру.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- STATS / ANIMATED -->
+<section id="s4" class="story-section stats text-center">
+  <div class="container py-5">
+    <h2 class="section-title">Мой прогресс в цифрах</h2>
+    <p class="section-subtitle mb-5">
+      Всё начинается с нуля. Главное — не останавливаться.
+    </p>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <h3 class="number" data-target="500">0</h3>
+          <p>Часов практики</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <h3 class="number" data-target="14">0</h3>
+          <p>Реализованных проектов</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-box">
+          <h3 class="number" data-target="380">0</h3>
+          <p>Коммитов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- GROWTH -->
+<section id="s5" class="story-section growth text-center">
+  <div class="container py-5">
+    <h2 class="section-title">Рост и развитие</h2>
+    <p class="section-subtitle">IT — это не код. Это мышление, системность и стремление к совершенству.</p>
+
+    <div class="row justify-content-center g-4">
+      <div class="col-10 col-md-3">
+        <div class="card neon">
+          <h4>Full-Stack</h4>
+          <p>Понимание обеих сторон разработки — от UI до REST API.</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-3">
+        <div class="card neon">
+          <h4>UX & Design</h4>
+          <p>Интуитивные интерфейсы, чистая визуальная логика и доступность.</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-3">
+        <div class="card neon">
+          <h4>Testing</h4>
+          <p>Автоматизация, качество, надёжность — основа зрелого кода.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="mt-4 ">
+      Каждый проект — это не просто код. Это маленький шаг к профессии мечты.
+    </p>
+  </div>
+</section>
+
+
+<!-- FUTURE -->
+<section id="s6" class="story-section future text-center">
+  <div class="container py-5">
+    <h2 class="section-title">Будущее</h2>
+    <p class="section-subtitle">
+      Моя цель — развивать себя в направлении <strong>AI-интеграций</strong> и <strong>веб-сервисов нового поколения</strong>.  
+      Хочу создавать продукты, которые не просто работают, а вдохновляют.
+    </p>
+
+    <p class="mt-4 quote" >
+      Я верю, что код может менять реальность,  
+      если в него вложить идеи, энергию и немного безумия 
+    </p>
+
+    <a href="#s1" class="btn btn--red mt-4">Вернуться к началу</a>
+  </div>
+</section>
+
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+  <script src="js/background.js" defer></script>
+  <!-- <script src="js/burger_menu.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/stats_counter.js"></script> -->
+  <script src="js/main.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
